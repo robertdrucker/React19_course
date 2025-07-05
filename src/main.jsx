@@ -1,14 +1,12 @@
 import { createRoot } from "react-dom/client";
 import Header from "./components/header/header";
-import StatePlayground from "./components/playground/state";
+// import StatePlayground from "./components/playground/state";
 import "./styles/styles.css";
 
 const App = () => (
   <>
     <Header />
-    <div className="container">
-      <StatePlayground />
-    </div>
+    <div className="container">{/* <StatePlayground /> */}</div>
   </>
 );
 
