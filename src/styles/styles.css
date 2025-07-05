@@ -72,3 +72,11 @@ nav {
   box-sizing: border-box;
   border-bottom: 1px solid grey;
 }
+
+.active {
+  background: red;
+}
+
+.not-active {
+  background: green;
+}
