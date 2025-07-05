@@ -1,16 +1,20 @@
-import { useState } from "react";
 import { createRoot } from "react-dom/client";
+import { useState } from "react";
 import Header from "./components/header/header";
 import NewsList from "./components/news_list";
 import { newsData } from "./utils/data";
 import "./styles/styles.css";
 
 const App = () => {
-  let [news, setNews] = useState(newsData);
+  const [news, setNews] = useState(newsData);
+
+  const getKeywords = (event) => {
+    console.log(event.target.value);
+  };
 
   return (
     <>
-      <Header />
+      <Header getKeywords={getKeywords} />
       <div className="container">
         <NewsList news={news}>
           <br />
